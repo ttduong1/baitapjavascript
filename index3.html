@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+        background-color: black;
+        color: aliceblue;
+    }
+    header {
+        text-align: center;
+        background-color: rgb(77, 74, 78);
+        
+    }
+    h2 {
+        border: 10px solid red;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h2>Sơ yếu lí lịch</h2>
+    </header>
+
+
+    <section>
+        <article class="infomation">
+            <h3>_Thông tin cá nhân_</h3>
+            <div class="yourname"></div>
+            <h5>Họ và tên: <span id="fullname"></span></h5>
+            <h5>Tuổi: <span id="age"></span></h5>
+            <h5>Giới tính: <span id="gender"></span></h5>
+        </article>
+
+        <article class="academy level">
+            <h3>_Trình độ học vấn_</h3>
+            <div class="youracademyleve1"></div>
+            <h5>Văn hóa: <span id="Culture"></span></h5>
+            <h5>Học vấn: <span id="Education"></span></h5>
+        </article>
+
+        <article class="profression">
+             <h3>_Nghề nghiệp_</h3>
+             <div class="yourprofression"></div>
+             <h5>Công việc 1: <span id="job1"></span></h5>
+             <h5>Công việc 2: <span id="job2"></span></h5>
+        </article>
+
+
+        <nav>
+            <button onclick="myif()">Nhập</button>
+        </nav>
+    </section>
+</body>
+
+<script>
+    function myif() {
+        document.getElementById("fullname").innerHTML = prompt("Nhập tên của mày.");
+        document.getElementById("age").innerHTML = prompt("Nhập tuổi của mày.");
+        document.getElementById("gender").innerHTML = prompt("Nhập giới tính của mày.");
+        document.getElementById("Culture").innerHTML = prompt("Văn hóa của mày thế nào ?");
+        document.getElementById("Education").innerHTML = prompt("Trình độ học vấn của mày như nào ?");
+        document.getElementById("job1").innerHTML = prompt("Công việc hiện tại của mày là gì ?");
+        document.getElementById("job2").innerHTML = prompt("Còn công việc nào khác không ?");
+    }   
+</script>
+</html>
